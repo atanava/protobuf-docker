@@ -1,7 +1,7 @@
 # protobuf-docker
 Protoc v2  
 Docker image of old version of protobuf for generating sources using .proto files with syntax = "proto2  
-Look in my docker-hub repository for actual images:  
+Look at my docker-hub repository for actual images:  
 https://hub.docker.com/repository/docker/atanava/protoc-2.6.1/general
 ### Java example:  
 > docker run --rm  --name protoc2 \\  
