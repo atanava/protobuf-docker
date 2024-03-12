@@ -1,7 +1,7 @@
 # protobuf-docker
-Protoc v2
-Docker image of old version of protobuf for generating sources using .proto files with syntax = "proto2
-Look in my docker-hub repository for actual images:
+Protoc v2  
+Docker image of old version of protobuf for generating sources using .proto files with syntax = "proto2  
+Look in my docker-hub repository for actual images:  
 https://hub.docker.com/repository/docker/atanava/protoc-2.6.1/general
 ### Java example:  
 > docker run --rm  --name protoc2 \\  
@@ -20,6 +20,7 @@ https://hub.docker.com/repository/docker/atanava/protoc-2.6.1/general
 ### Other languages: 
 Other languages wasn't tested yet,  but you can try it by replacing --env LANG=java with another language.  
 ### Edit, Move, Delete etc.
-After generating your generated files owner is root user of container.  
+After executing of ```docker run``` command, your generated files will be placed to new subfolder ```output``` of source folder you mentioned in docker run command.  
+But only **root** user of created container will became an owner of this folder.  
 Use **chown** command on host to get write access to these files.
 
